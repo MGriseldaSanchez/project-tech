@@ -37,3 +37,13 @@
    para visualizar el sitio.
 
 ---
+
+### Recursos externos
+
+- 🔗 [Formspree](https://formspree.io/)
+- 🔗 [Google Fonts](https://fonts.google.com/)
+- 🔗 [CSS Tricks](https://css-tricks.com/)
+- 🔗 [Random User Generator](https://randomuser.me/)
+- 🔗 [pixabay](https://pixabay.com/)
+- 🔗 [Pexels](https://www.pexels.com/)
+- 🔗 [Iconify](https://iconify.design/)
