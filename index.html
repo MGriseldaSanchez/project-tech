@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>cursos programación</title>
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header id="inicio">
+      <nav>
+        <ul class="navbar">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <span class="title">DEV-COURSE-MARKET ❤</span>
+      <p>Aprende a programar desde cero o mejora tus habilidades</p>
+    </header>
+
+    <!-- Sección Productos -->
+    <section id="productos" class="productos">
+      <h2>Nuestros Cursos</h2>
+      <div class="productos-container">
+        <div class="card">
+          <img
+            src="https://images.pexels.com/photos/11035371/pexels-photo-11035371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Curso de HTML y CSS"
+          />
+          <div class="text-container">
+            <h3>HTML + CSS</h3>
+            <p>Aprende a crear sitios web atractivos con HTML y CSS</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1613490900233-141c5560d75d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Curso de JavaScript"
+          />
+          <div class="text-container">
+            <h3>JavaScript</h3>
+            <p>Domina el lenguaje de programación más usado del Front-End</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.pexels.com/photos/1261427/pexels-photo-1261427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Curso node"
+          />
+          <div class="text-container">
+            <h3>Node + React</h3>
+            <p>Aprende a crear aplicaciones web dinámicas fullstack</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video -->
+      <!-- Video -->
+      <div class="video-container">
+        <h3>Programar es una aventura, sé parte de ella...</h3>
+        <video autoplay loop muted playsinline>
+          <source
+            src="https://cdn.pixabay.com/video/2016/08/22/4733-179738669_large.mp4"
+            type="video/mp4"
+          />
+          Tu navegador no soporta el elemento de video.
+        </video>
+      </div>
+    </section>
+
+    <!-- Sección Reseñas -->
+    <section id="resenas" class="resenas">
+      <h2>Opiniones de nuestros estudiantes</h2>
+      <div class="resenas-container">
+        <div class="resena">
+          <p>
+            "El curso de JavaScript me ayudó a entender conceptos complejos."
+          </p>
+          <p><strong>- Juan</strong></p>
+        </div>
+        <div class="resena">
+          <p>"Excelente contenido y muy bien explicado."</p>
+          <p><strong>- María</strong></p>
+        </div>
+        <div class="resena">
+          <p>
+            "Gracias al curso de React ahora trabajo como desarrollador web."
+          </p>
+          <p><strong>- Ana</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Cursos de Programación. Todos los derechos reservados.</p>
+      <p>
+        Síguenos en <a href="#">Facebook</a>, <a href="#">Twitter</a>,
+        <a href="#">Instagram</a>
+      </p>
+
+      <!-- Mapa de Google Maps -->
+      <div class="map-container">
+        <h3>Visítanos en nuestra ubicación</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509371!2d144.96305791531665!3d-37.81362797975162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1456fcb%3A0x5045675218ce6e0!2s123+Main+St%2C+Ciudad+Ficticia!5e0!3m2!1ses!2ses!4v1601629031908!5m2!1ses!2ses"
+          width="100%"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </footer>
+  </body>
+</html>
