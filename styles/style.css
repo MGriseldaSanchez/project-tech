@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* ibm sans */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 /* colores root */
 :root {
@@ -8,6 +10,7 @@
     --color-terciario: #e0e5c4;
     --font-one:"Tiny5", sans-serif;
     --font-two:"Lato", sans-serif;
+    --font-three:"IBM Plex Sans", sans-serif;
 }
 
 body {
@@ -23,11 +26,28 @@ header {
     color: #fff;
 }
 
+.title-icon {
+    color: #ffff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 header .title{
-    font-family: var(--font-one);
-    font-size: 5rem;
-    color: var(--color-secundario);
+    font-family: var(--font-three);
+    font-size: 3.5rem;
     font-weight: 900;
+}
+
+header .second-title{
+    font-size: 1.5rem;
+    font-family: var(--font-three)
+}
+
+header nav{
+    border-bottom: 1px solid white;
+    margin-bottom: 5rem;
 }
 
 
@@ -54,6 +74,24 @@ header .title{
 }
 
 /* Sección Productos */
+
+
+.productos h2{
+    color: aliceblue;
+    font-family: var(--font-three);
+    font-size: x-large;
+    text-align: center;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    margin-bottom: 4rem;
+    
+}
+
+#productos{
+    margin-top: 3rem;
+}
+
+
 .productos-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -63,10 +101,15 @@ header .title{
 }
 
 .card {
-    background-color: #5512bc;
+    background-color: #1a1a1a;
+    border-radius: 10px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 
+        0 0 3px #ffff00,      /* Resplandor cercano */
+        0 0 3px #ffff00,     /* Difuminado medio */
+        0 0 4px #ffff00,     /* Difuminado amplio */
+        0 0 15px #ffff00;     /* Difuminado máximo */ 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -90,15 +133,16 @@ header .title{
 
 .text-container {
     text-align: center;
-    color: #55f144;
+    color: #ffffff;
     padding: 1.5rem;
 }
 
 
 .text-container h3 {
     font-size: 2rem;
-    font-weight: 900;
+    font-weight: 500;
     margin-bottom: 0.5rem;
+    font-family: 'IBM Plex Sans';
 }
 
 
@@ -115,6 +159,7 @@ header .title{
 .text-container p {
     font-size: 1rem;
     line-height: 1.4;
+    font-family: var(--font-three);
 }
 
 @media (max-width: 768px) {
@@ -163,11 +208,13 @@ header .title{
 
 .video-container h3 {
     position: relative;
-    font-size: 2rem;
-    z-index: 1; /* Mantiene el texto encima del video */
+    font-size: 2.5rem;
+    z-index: 1;
     text-align: center;
     padding: 10px 20px;
-    border-radius: 8px;
+    font-family: var(--font-three);
+    font-weight: 400;
+    border-bottom: solid 1px #ffff00;   
 }
 
 /* Sección Reseñas */
