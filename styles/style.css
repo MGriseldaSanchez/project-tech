@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 /* colores root */
 :root {
@@ -6,11 +7,12 @@
     --color-secundario: #e61077;
     --color-terciario: #e0e5c4;
     --font-one:"Tiny5", sans-serif;
+    --font-two:"Lato", sans-serif;
 }
 
 body {
     background-color:var(--color-primario);
-    font-family: Arial, sans-serif;
+    font-family: var(--font-two);
     line-height: 1.6;
 }
 
@@ -61,12 +63,14 @@ header .title{
 }
 
 .card {
-    background-color: #ffffff;
+    background-color: #5512bc;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
 
 .card:hover {
     transform: translateY(-5px);
@@ -75,7 +79,7 @@ header .title{
 
 .card img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -85,18 +89,31 @@ header .title{
 }
 
 .text-container {
+    text-align: center;
+    color: #55f144;
     padding: 1.5rem;
 }
 
+
 .text-container h3 {
-    font-size: 1.5rem;
-    color: #333;
+    font-size: 2rem;
+    font-weight: 900;
     margin-bottom: 0.5rem;
 }
 
+
+.text-container  .icon-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+
+
 .text-container p {
     font-size: 1rem;
-    color: #666;
     line-height: 1.4;
 }
 
@@ -118,7 +135,7 @@ header .title{
     }
 }
 
-/* Video promocional */
+/* Video background */
 .video-container {
     margin-top: 4rem;
     position: relative;
@@ -149,7 +166,6 @@ header .title{
     font-size: 2rem;
     z-index: 1; /* Mantiene el texto encima del video */
     text-align: center;
-    /* background: rgba(0, 0, 0, 0.5); Fondo semitransparente para destacar el texto */
     padding: 10px 20px;
     border-radius: 8px;
 }
