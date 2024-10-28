@@ -34,11 +34,26 @@ header {
     gap: 0.5rem;
 }
 
+
 header .title{
     font-family: var(--font-three);
     font-size: 3.5rem;
     font-weight: 900;
 }
+
+/* efecto neon */
+
+.title:hover{
+    color: #ffff00;
+    text-shadow: 
+        0 0 2px #ffff00,      /* Resplandor cercano */
+        0 0 2px #ffff00,      /* Difuminado medio */
+        0 0 3px #ffff00,      /* Difuminado amplio */
+        0 0 10px #ffff00;     /* Difuminado máximo */
+    transform: scale(1);  /* Pequeño aumento de escala */
+}
+
+
 
 header .second-title{
     font-size: 1.5rem;
@@ -219,7 +234,72 @@ header nav{
 
 /* Sección Reseñas */
 
-#resenas{
+#resenas h2{
+    color: aliceblue;
+    font-family: var(--font-three);
+    font-size: x-large;
+    text-align: center;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    margin-bottom: 4rem;
+}
+
+.container {
+    background: -webkit-repeating-linear-gradient(90deg, #030016, #030016 1px, #ffff00 1px, #ffff00 2px);
+    max-width: 100%;
+    margin: 0 auto;
+}
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 2rem;
+}
+.review-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+}
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.review-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.review-name {
+    font-weight: bold;
+}
+.review-stars {
+    color: #ffd700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.review-text {
+    font-size: 14px;
+    color: #333;
+}
+@media (max-width: 768px) {
+    .review-card {
+        width: calc(50% - 20px);
+    }
+}
+@media (max-width: 480px) {
+    .review-card {
+        width: 100%;
+    }
+}
+
+
+/* #resenas{
     margin-top: 5rem;
 }
 
@@ -290,7 +370,7 @@ header nav{
     .resenas-container {
         grid-template-columns: 1fr;
     }
-}
+} */
 
 /* Sección Contacto */
 .contacto form {
