@@ -44,19 +44,21 @@ header {
     width: 25rem;
     height: 25rem;
     border-radius: 50%;
+    opacity: 0.6;
 }
 
 
 .title{
-    font-family: var(--font-one);
+    font-family: var(--font-two);
     font-size: 3.5rem;
-    font-weight: 500;
+    font-weight: 300;
+    text-align: center;
     line-height: 5rem;
 }
 
 header nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -68,10 +70,10 @@ header nav{
 .logo:hover{
     color: var(--color-secundario);
     text-shadow: 
-        0 0 2px var(--color-secundario),      /* Resplandor cercano */
-        0 0 2px var(--color-secundario),      /* Difuminado medio */
-        0 0 3px var(--color-secundario),      /* Difuminado amplio */
-        0 0 10px var(--color-secundario);     /* Difuminado máximo */
+        0 0 2px var(--color-secundario),     
+        0 0 2px var(--color-secundario),     
+        0 0 3px var(--color-secundario),      
+        0 0 10px var(--color-secundario);     
     transform: scale(1);  /* Pequeño aumento de escala */
 }
 
@@ -139,6 +141,7 @@ header nav{
 }
 
 .card {
+    text-align: center;
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -153,19 +156,19 @@ header nav{
 
 .card img {
     width: 100%;
-    height: 150px; /* Update 2 */
+    height: 150px; 
     object-fit: cover;
 }
 
 .text-container {
-    padding: 15px; /* Update 3 */
+    padding: 15px; 
 }
 
-.text-container h3 {
+/* .text-container h3 {
     margin: 0 0 10px;
     color: var(--primary-color);
-    font-size: 1.2em; /* Update 4 */
-}
+    font-size: 1.2em; 
+} */
 
 .text-container p {
     margin: 0;
@@ -176,8 +179,9 @@ header nav{
 
 .icon-cont {
     display: flex;
+    justify-content: center;
     gap: 10px;
-    margin: 10px 0; /* Update 5 */
+    margin: 10px 0; 
 }
 
 .icon-cont svg {
