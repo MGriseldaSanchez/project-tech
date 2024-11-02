@@ -38,7 +38,7 @@
 
 ---
 
-### Recursos externos
+### Recursos externos utilizados
 
 - 🔗 [Formspree](https://formspree.io/)
 - 🔗 [Google Fonts](https://fonts.google.com/)
@@ -47,3 +47,9 @@
 - 🔗 [pixabay](https://pixabay.com/)
 - 🔗 [Pexels](https://www.pexels.com/)
 - 🔗 [Iconify](https://iconify.design/)
+
+#### Breve descripción del proyecto
+
+Este proyecto es un sitio web llamado _Codewave_, cuyo contenido se basa en un market de cursos de programación con un estilo y diseño inspirado en distintos bootcamp del mercado.
+
+### Deploy 🚀
